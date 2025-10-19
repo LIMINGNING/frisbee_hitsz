@@ -47,3 +47,5 @@ cache/
 tmp/
 
 *.pdf
+
+.venv/
