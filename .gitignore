@@ -1,0 +1,49 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ind
+*.ilg
+*.blg
+*.bbl
+*.run.xml
+*.xdv
+
+# minted 临时目录
+_minted-*/
+
+# 临时/备份文件
+*~
+*.bak
+*.backup
+*.swp
+.#*
+
+# 编辑器/系统文件
+.DS_Store
+Thumbs.db
+
+# IDE / 编辑器 设置 (可按需保留)
+.vscode/
+.idea/
+
+# latexmk 自动生成的锁/状态文件
+.latexmkrc
+*.auxlock
+
+# 可选：缓存与临时目录
+cache/
+tmp/
+
+*.pdf
