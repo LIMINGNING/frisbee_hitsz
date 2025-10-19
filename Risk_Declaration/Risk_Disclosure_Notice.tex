@@ -1,0 +1,238 @@
+\documentclass{article}
+\usepackage{xeCJK} % XeLaTeX中文支持
+\usepackage[a4paper, top=2cm, bottom=1cm, left=2.5cm, right=2.5cm]{geometry} % 设置纸张大小为A4并调整页边距
+\usepackage{booktabs} % 用于绘制更美观的表格线
+\usepackage{array} % 用于更灵活的列定义
+\usepackage{enumitem} % 用于自定义列表间距
+\usepackage{graphicx} % 用于插入图片
+\usepackage[dvipsnames]{xcolor} % 用于颜色和透明度
+\usepackage{eso-pic} % 用于添加水印
+\pagestyle{empty} % 移除页码
+
+% 添加水印
+\AddToShipoutPictureBG{%
+  \AtPageCenter{%
+    \makebox(0,0)[c]{%
+      \textcolor{black!10}{\includegraphics[width=0.5\paperwidth]{协会徽章_淡.png}}%
+    }%
+  }%
+}
+\begin{document}
+
+% 手动排版标题，并控制其上方和下方的间距
+\begin{center}
+    \vspace*{-1.5cm} % 调整标题上方间距
+    {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
+    \vspace{0.5cm} % 调整标题下方与正文的间距
+\end{center}
+
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+
+\setlist[enumerate]{itemsep=5pt} % 设置enumerate环境中各项的间距
+\begin{enumerate} % 项目列表
+\item 本人（队）及监护人完全了解自己的身体状况，确认自己的健康状况良好，\textbf{没有任何身体不适或疾病}（包括先天性和风湿性等其他心脏病、高血压、脑血管疾病、心肌炎、冠状动脉病、严重心律不齐以及其它\textbf{不适合参加本次比赛的疾病}），因此我\textbf{郑重声明，可以正常参加此项比赛}。
+\item 本人（队）充分了解本次活动期间的练习或比赛有\textbf{潜在的危险}，以及可能由此而导致的\textbf{受伤或事故}，我会以\textbf{对自己安全负责任的态度}参赛。
+\item 本人（队）愿意\textbf{遵守本次比赛的所有规则、规定}，如果在参赛过程中发现或注意到任何风险，将\textbf{立刻终止参赛或告知赛会组织者}。
+\item 本人（队）同意接受主办方在比赛期间提供的\textbf{现场急救性质的医务治疗}，但在医院救治等发生的\textbf{相关费用由本人负担}。
+\item 本人（队）承诺\textbf{妥善保管个人财物}，如在活动期间发生丢失或损坏，责任自负。
+\item 本人（队）将穿着\textbf{适合本次比赛的运动服装和鞋履}，并根据个人情况判断是否佩戴必要的防护用具。
+\item 本人（队）了解并承诺在比赛前进行\textbf{充分的热身活动}，并在赛后进行适当的整理放松。
+\item 本人（队）将\textbf{遵守体育道德和公平竞赛精神}，尊重裁判、工作人员、对手及观众。
+\item 如在比赛过程中感到身体不适或发生运动损伤，本人（队）将\textbf{立即停止比赛并主动告知赛事组织人员或医务人员}。
+\item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
+\end{enumerate}
+
+\vspace{0.5cm} % 增加垂直间距
+
+\noindent \textbf{A队运动员名单及签名：} \\
+\begin{center}
+\small % 减小表格字体以适应页面
+\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\begin{tabular}{lccccl} % l:左对齐, c:居中
+    \toprule % 表格顶部粗线
+    \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
+    \midrule % 表格中间细线
+    刘慕实 & 男 & 2年$<$t & 25S151141 & \rule{3cm}{0.4pt} \\
+    耿增越 & 男 & 2年$<$t & 2023311226 & \rule{3cm}{0.4pt} \\
+    蔡洛萱 & 女 & 6月$<$t$<$1年 & 2024314677 & \rule{3cm}{0.4pt} \\
+    赵浩帆 & 男 & 6月$<$t$<$1年 & 25B965005 & \rule{3cm}{0.4pt} \\
+    刘睿泽 & 男 & t$<$6月 & 2024311062 & \rule{3cm}{0.4pt} \\
+    寇家辉 & 男 & t$<$6月 & 2024311312 & \rule{3cm}{0.4pt} \\
+    陈子博 & 男 & t$<$6月 & 25S165056 & \rule{3cm}{0.4pt} \\
+    郝建晓 & 男 & t$<$6月 & 25S153158 & \rule{3cm}{0.4pt} \\
+    庄冠宁 & 男 & t$<$6月 & 25S065015 & \rule{3cm}{0.4pt} \\
+    蔡卓畅 & 男 & t$<$6月 & 25S165041 & \rule{3cm}{0.4pt} \\
+    郭芯言 & 女 & t$<$6月 & 220210228 & \rule{3cm}{0.4pt} \\
+    郭昱辰 & 女 & t$<$6月 & 2023311H03 & \rule{3cm}{0.4pt} \\
+    郑雨竺 & 女 & t$<$6月 & 25S156021 & \rule{3cm}{0.4pt} \\
+    \bottomrule % 表格底部粗线
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm} % 增加垂直间距
+\noindent \textbf{日期：}
+
+\newpage
+
+% 手动排版标题，并控制其上方和下方的间距
+\begin{center}
+    \vspace*{-1.5cm} % 调整标题上方间距
+    {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
+    \vspace{0.5cm} % 调整标题下方与正文的间距
+\end{center}
+
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+
+\setlist[enumerate]{itemsep=5pt} % 再次设置，确保对后续列表生效
+\begin{enumerate} % 项目列表
+\item 本人（队）及监护人完全了解自己的身体状况，确认自己的健康状况良好，\textbf{没有任何身体不适或疾病}（包括先天性和风湿性等其他心脏病、高血压、脑血管疾病、心肌炎、冠状动脉病、严重心律不齐以及其它\textbf{不适合参加本次比赛的疾病}），因此我\textbf{郑重声明，可以正常参加此项比赛}。
+\item 本人（队）充分了解本次活动期间的练习或比赛有\textbf{潜在的危险}，以及可能由此而导致的\textbf{受伤或事故}，我会以\textbf{对自己安全负责任的态度}参赛。
+\item 本人（队）愿意\textbf{遵守本次比赛的所有规则、规定}，如果在参赛过程中发现或注意到任何风险，将\textbf{立刻终止参赛或告知赛会组织者}。
+\item 本人（队）同意接受主办方在比赛期间提供的\textbf{现场急救性质的医务治疗}，但在医院救治等发生的\textbf{相关费用由本人负担}。
+\item 本人（队）承诺\textbf{妥善保管个人财物}，如在活动期间发生丢失或损坏，责任自负。
+\item 本人（队）将穿着\textbf{适合本次比赛的运动服装和鞋履}，并根据个人情况判断是否佩戴必要的防护用具。
+\item 本人（队）了解并承诺在比赛前进行\textbf{充分的热身活动}，并在赛后进行适当的整理放松。
+\item 本人（队）将\textbf{遵守体育道德和公平竞赛精神}，尊重裁判、工作人员、对手及观众。
+\item 如在比赛过程中感到身体不适或发生运动损伤，本人（队）将\textbf{立即停止比赛并主动告知赛事组织人员或医务人员}。
+\item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
+\end{enumerate}
+
+\vspace{0.5cm} % 增加垂直间距
+
+\noindent \textbf{B队运动员名单及签名：} \\
+\begin{center}
+\small % 减小表格字体以适应页面
+\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\begin{tabular}{lccccl}
+    \toprule
+    \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
+    \midrule
+    王昭蔚 & 男 & 2年$<$t & 25s155019 & \rule{3cm}{0.4pt} \\
+    贾思洋 & 男 & 6月$<$t$<$1年 & 23SM46556 & \rule{3cm}{0.4pt} \\
+    丁俊洋 & 男 & t$<$6月 & 220310206 & \rule{3cm}{0.4pt} \\
+    黄俊杰 & 男 & t$<$6月 & 2023313619 & \rule{3cm}{0.4pt} \\
+    李慧城 & 男 & t$<$6月 & 2024312115 & \rule{3cm}{0.4pt} \\
+    徐传奇 & 男 & t$<$6月 & 2024312906 & \rule{3cm}{0.4pt} \\
+    吴锦霈 & 男 & t$<$6月 & 2025310749 & \rule{3cm}{0.4pt} \\
+    黄乐佳 & 男 & t$<$6月 & 2025310486 & \rule{3cm}{0.4pt} \\
+    朱海峰 & 男 & t$<$6月 & 25S051029 & \rule{3cm}{0.4pt} \\
+    黄睿涵 & 女 & t$<$6月 & 2024312712 & \rule{3cm}{0.4pt} \\
+    考沛瑶 & 女 & t$<$6月 & 24S039019 & \rule{3cm}{0.4pt} \\
+    刘芷烨 & 女 & t$<$6月 & 25S152047 & \rule{3cm}{0.4pt} \\
+    陈子瑶 & 女 & t$<$6月 & 2025310432 & \rule{3cm}{0.4pt} \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm} % 增加垂直间距
+\noindent \textbf{日期：}
+\newpage
+
+% 手动排版标题，并控制其上方和下方的间距
+\begin{center}
+    \vspace*{-1.5cm} % 调整标题上方间距
+    {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
+    \vspace{0.5cm} % 调整标题下方与正文的间距
+\end{center}
+
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+
+\setlist[enumerate]{itemsep=5pt} % 再次设置
+\begin{enumerate} % 项目列表
+\item 本人（队）及监护人完全了解自己的身体状况，确认自己的健康状况良好，\textbf{没有任何身体不适或疾病}（包括先天性和风湿性等其他心脏病、高血压、脑血管疾病、心肌炎、冠状动脉病、严重心律不齐以及其它\textbf{不适合参加本次比赛的疾病}），因此我\textbf{郑重声明，可以正常参加此项比赛}。
+\item 本人（队）充分了解本次活动期间的练习或比赛有\textbf{潜在的危险}，以及可能由此而导致的\textbf{受伤或事故}，我会以\textbf{对自己安全负责任的态度}参赛。
+\item 本人（队）愿意\textbf{遵守本次比赛的所有规则、规定}，如果在参赛过程中发现或注意到任何风险，将\textbf{立刻终止参赛或告知赛会组织者}。
+\item 本人（队）同意接受主办方在比赛期间提供的\textbf{现场急救性质的医务治疗}，但在医院救治等发生的\textbf{相关费用由本人负担}。
+\item 本人（队）承诺\textbf{妥善保管个人财物}，如在活动期间发生丢失或损坏，责任自负。
+\item 本人（队）将穿着\textbf{适合本次比赛的运动服装和鞋履}，并根据个人情况判断是否佩戴必要的防护用具。
+\item 本人（队）了解并承诺在比赛前进行\textbf{充分的热身活动}，并在赛后进行适当的整理放松。
+\item 本人（队）将\textbf{遵守体育道德和公平竞赛精神}，尊重裁判、工作人员、对手及观众。
+\item 如在比赛过程中感到身体不适或发生运动损伤，本人（队）将\textbf{立即停止比赛并主动告知赛事组织人员或医务人员}。
+\item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
+\end{enumerate}
+
+\vspace{0.5cm} % 增加垂直间距
+
+\noindent \textbf{C队运动员名单及签名：} \\
+\begin{center}
+\small % 减小表格字体以适应页面
+\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\begin{tabular}{lccccl}
+    \toprule
+    \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
+    \midrule
+    马荣 & 男 & 2年$<$t & 2025330524 & \rule{3cm}{0.4pt} \\
+    黄家骏 & 男 & 6月$<$t$<$1年 & 2024311040 & \rule{3cm}{0.4pt} \\
+    倪梓源 & 男 & t$<$6月 & 2023313729 & \rule{3cm}{0.4pt} \\
+    Nadeem Masih & 男 & t$<$6月 & 23BF52005 & \rule{3cm}{0.4pt} \\
+    刘尊 & 男 & t$<$6月 & 24S152072 & \rule{3cm}{0.4pt} \\
+    陈豪 & 男 & t$<$6月 & 2025310364 & \rule{3cm}{0.4pt} \\
+    黄舒涵 & 男 & t$<$6月 & 2025213672 & \rule{3cm}{0.4pt} \\
+    张陈宇 & 男 & t$<$6月 & 2024311097 & \rule{3cm}{0.4pt} \\
+    Zakaria Moustahib & 男 & t$<$6月 & 2025330183 & \rule{3cm}{0.4pt} \\
+    潘秀丽 & 女 & t$<$6月 & 2024312180 & \rule{3cm}{0.4pt} \\
+    孟欣 & 女 & t$<$6月 & 24B926002 & \rule{3cm}{0.4pt} \\
+    田佳 & 女 & t$<$6月 & 25S057001 & \rule{3cm}{0.4pt} \\
+    黎加馨 & 女 & t$<$6月 & 2025311584 & \rule{3cm}{0.4pt} \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm} % 增加垂直间距
+\noindent \textbf{日期：}
+\newpage
+
+% 手动排版标题，并控制其上方和下方的间距
+\begin{center}
+    \vspace*{-1.5cm} % 调整标题上方间距
+    {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
+    \vspace{0.5cm} % 调整标题下方与正文的间距
+\end{center}
+
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+
+\setlist[enumerate]{itemsep=5pt} % 再次设置
+\begin{enumerate} % 项目列表
+\item 本人（队）及监护人完全了解自己的身体状况，确认自己的健康状况良好，\textbf{没有任何身体不适或疾病}（包括先天性和风湿性等其他心脏病、高血压、脑血管疾病、心肌炎、冠状动脉病、严重心律不齐以及其它\textbf{不适合参加本次比赛的疾病}），因此我\textbf{郑重声明，可以正常参加此项比赛}。
+\item 本人（队）充分了解本次活动期间的练习或比赛有\textbf{潜在的危险}，以及可能由此而导致的\textbf{受伤或事故}，我会以\textbf{对自己安全负责任的态度}参赛。
+\item 本人（队）愿意\textbf{遵守本次比赛的所有规则、规定}，如果在参赛过程中发现或注意到任何风险，将\textbf{立刻终止参赛或告知赛会组织者}。
+\item 本人（队）同意接受主办方在比赛期间提供的\textbf{现场急救性质的医务治疗}，但在医院救治等发生的\textbf{相关费用由本人负担}。
+\item 本人（队）承诺\textbf{妥善保管个人财物}，如在活动期间发生丢失或损坏，责任自负。
+\item 本人（队）将穿着\textbf{适合本次比赛的运动服装和鞋履}，并根据个人情况判断是否佩戴必要的防护用具。
+\item 本人（队）了解并承诺在比赛前进行\textbf{充分的热身活动}，并在赛后进行适当的整理放松。
+\item 本人（队）将\textbf{遵守体育道德和公平竞赛精神}，尊重裁判、工作人员、对手及观众。
+\item 如在比赛过程中感到身体不适或发生运动损伤，本人（队）将\textbf{立即停止比赛并主动告知赛事组织人员或医务人员}。
+\item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
+\end{enumerate}
+
+\vspace{0.5cm} % 增加垂直间距
+
+\noindent \textbf{D队运动员名单及签名：} \\
+\begin{center}
+\small % 减小表格字体以适应页面
+\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\begin{tabular}{lccccl}
+    \toprule
+    \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
+    \midrule
+    张豫艳 & 女 & 2年$<$t & 25S153147 & \rule{3cm}{0.4pt} \\
+    马悠然 & 男 & 6月$<$t$<$1年 & 2023311228 & \rule{3cm}{0.4pt} \\
+    刘证涛 & 男 & 6月$<$t$<$1年 & 2024311417 & \rule{3cm}{0.4pt} \\
+    朱昱玮 & 男 & t$<$6月 & 2023311E13 & \rule{3cm}{0.4pt} \\
+    杨鸿鑫 & 男 & t$<$6月 & 2024312706 & \rule{3cm}{0.4pt} \\
+    宁智煌 & 男 & t$<$6月 & 25S165027 & \rule{3cm}{0.4pt} \\
+    张硕 & 男 & t$<$6月 & 25S155080 & \rule{3cm}{0.4pt} \\
+    李旺 & 男 & t$<$6月 & 25s152079 & \rule{3cm}{0.4pt} \\
+    郭辉源 & 男 & t$<$6月 & 25S151181 & \rule{3cm}{0.4pt} \\
+    SARKER BIKAS & 男 & t$<$6月 & 2025330273 & \rule{3cm}{0.4pt} \\
+    杨婧兰 & 女 & t$<$6月 & 2024311450 & \rule{3cm}{0.4pt} \\
+    李焱 & 女 & t$<$6月 & 25S155079 & \rule{3cm}{0.4pt} \\
+    李园 & 女 & t$<$6月 & 25S153034 & \rule{3cm}{0.4pt} \\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm} % 增加运动员签名和日期之间的间距
+\noindent \textbf{日期：}
+
+\end{document}
