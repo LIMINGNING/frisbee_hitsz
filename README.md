@@ -1,1 +1,1 @@
-## HITSZ frisbee association documents repository
+## HITSZ frisbee association documents repository.
