@@ -1,0 +1,74 @@
+\appendix
+\section{参赛人员名单}
+
+\subsection*{A队}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{} L{3cm} M{1.4cm} L{3cm} X @{}}
+    \toprule
+    \textbf{姓名} & \textbf{性别} & \textbf{学号} & \textbf{盘龄} \\
+    \midrule
+    康钊源 & 男 & 2024311150 & 1-2年 \\
+    赵浩帆 & 男 & 25B965005 & 6月-1年 \\
+    寇家辉 & 男 & 2024311312 & 6月-1年 \\
+    王俊杰 & 男 & 2024312042 & 6月以内 \\
+    吴智杰 & 男 & 2510082093 & 6月以内 \\
+    罗梦恬 & 女 & 2023311801 & 2年以上 \\
+    潘秀丽 & 女 & 2024312180 & 6月以内 \\
+    樊黎硕 & 女 & 25S153056 & 6月以内 \\
+    肖叶萱 & 女 & 2023215045 & 6月以内 \\
+    \bottomrule
+\end{tabularx}
+
+\subsection*{B队}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{} L{3cm} M{1.4cm} L{3cm} X @{}}
+    \toprule
+    \textbf{姓名} & \textbf{性别} & \textbf{学号} & \textbf{盘龄} \\
+    \midrule
+    刘慕实 & 男 & 25S151141 & 2年以上 \\
+    马荣 & 男 & 2025330524 & 6月-1年 \\
+    梁柱政 & 男 & 25S154067 & 6月-1年 \\
+    杨鸿鑫 & 男 & 2024312706 & 6月以内 \\
+    金圣博 & 男 & 210810404 & 6月以内 \\
+    Ocean & 女 & 2025213750 & 1-2年 \\
+    陈子瑶 & 女 & 2025310432 & 6月以内 \\
+    杨千凝 & 女 & 25S164067 & 6月以内 \\
+    孙明琪 & 女 & 2023214617 & 6月以内 \\
+    \bottomrule
+\end{tabularx}
+
+\subsection*{C队}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{} L{3cm} M{1.4cm} L{3cm} X @{}}
+    \toprule
+    \textbf{姓名} & \textbf{性别} & \textbf{学号} & \textbf{盘龄} \\
+    \midrule
+    黄家乐 & 男 & - & 2年以上 \\
+    黄家骏 & 男 & 2024311040 & 1-2年 \\
+    金珉宇 & 男 & 2024311060 & 6月以内 \\
+    典珅司 & 男 & 2024311045 & 6月以内 \\
+    刘沐之 & 男 & 25S052006 & 6月以内 \\
+    小双 & 女 & - & 6月-1年 \\
+    EL MOUDDEN ZAYNAB & 女 & 2025330187 & 6月以内 \\
+    李焱 & 女 & 25s155079 & 6月以内 \\
+    小午 & 女 & 2410012101 & 6月以内 \\
+    \bottomrule
+\end{tabularx}
+
+\subsection*{D队}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{} L{3cm} M{1.4cm} L{3cm} X @{}}
+    \toprule
+    \textbf{姓名} & \textbf{性别} & \textbf{学号} & \textbf{盘龄} \\
+    \midrule
+    王硕 & 男 & 无 & 2年以上 \\
+    耿增越 & 男 & 2023311226 & 1-2年 \\
+    温岩 & 男 & 2024312297 & 6月以内 \\
+    万一鸣 & 男 & 2025310507 & 6月以内 \\
+    张梦辉 & 男 & 2025312884 & 6月以内 \\
+    孟欣 & 女 & 24B926002 & 6月-1年 \\
+    段绚涵 & 女 & 2025310723 & 6月以内 \\
+    summer & 女 & 2410053014 & 6月以内 \\
+    刘昊媛 & 女 & 2023215035 & 6月以内 \\
+    \bottomrule
+\end{tabularx}
