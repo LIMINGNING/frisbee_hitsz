@@ -1,19 +1,22 @@
 \documentclass{article}
-\usepackage{xeCJK} % XeLaTeX中文支持
-\usepackage[a4paper, top=2cm, bottom=1cm, left=2.5cm, right=2.5cm]{geometry} % 设置纸张大小为A4并调整页边距
+\usepackage{ctex} % 统一使用ctex宏包，确保默认字体（如宋体）和生僻字正常显示
+\usepackage[a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry} % 设置纸张大小为A4并调整页边距
 \usepackage{booktabs} % 用于绘制更美观的表格线
 \usepackage{array} % 用于更灵活的列定义
 \usepackage{enumitem} % 用于自定义列表间距
 \usepackage{graphicx} % 用于插入图片
 \usepackage[dvipsnames]{xcolor} % 用于颜色和透明度
-\usepackage{eso-pic} % 用于添加水印
+\usepackage{eso-pic}
+\usepackage{tikz} % 用于添加水印
 \pagestyle{empty} % 移除页码
 
 % 添加水印
 \AddToShipoutPictureBG{%
   \AtPageCenter{%
     \makebox(0,0)[c]{%
-      \textcolor{black!10}{\includegraphics[width=0.5\paperwidth]{协会徽章_淡.png}}%
+      \begin{tikzpicture}[remember picture, overlay]
+        \node[opacity=0.2] at (current page.center) {\includegraphics[width=0.6\paperwidth]{协会徽章_淡.png}};
+      \end{tikzpicture}%
     }%
   }%
 }
@@ -21,12 +24,12 @@
 
 % 手动排版标题，并控制其上方和下方的间距
 \begin{center}
-    \vspace*{-1.5cm} % 调整标题上方间距
+    \vspace*{0cm} % 调整标题上方间距
     {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
     \vspace{0.5cm} % 调整标题下方与正文的间距
 \end{center}
 
-本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2026哈尔滨工业大学（深圳）体育文化节极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
 
 \setlist[enumerate]{itemsep=5pt} % 设置enumerate环境中各项的间距
 \begin{enumerate} % 项目列表
@@ -42,29 +45,26 @@
 \item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
 \end{enumerate}
 
-\vspace{0.5cm} % 增加垂直间距
+\vspace{0.2cm} % 增加垂直间距
 
 \noindent \textbf{A队运动员名单及签名：} \\
 \begin{center}
 \small % 减小表格字体以适应页面
-\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\renewcommand{\arraystretch}{1.5} % 增加行间距，可调整数值
 \begin{tabular}{lccccl} % l:左对齐, c:居中
     \toprule % 表格顶部粗线
     \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
-    \midrule % 表格中间细线
-    刘慕实 & 男 & 2年$<$t & 25S151141 & \rule{3cm}{0.4pt} \\
-    耿增越 & 男 & 2年$<$t & 2023311226 & \rule{3cm}{0.4pt} \\
-    蔡洛萱 & 女 & 6月$<$t$<$1年 & 2024314677 & \rule{3cm}{0.4pt} \\
-    赵浩帆 & 男 & 6月$<$t$<$1年 & 25B965005 & \rule{3cm}{0.4pt} \\
-    刘睿泽 & 男 & t$<$6月 & 2024311062 & \rule{3cm}{0.4pt} \\
-    寇家辉 & 男 & t$<$6月 & 2024311312 & \rule{3cm}{0.4pt} \\
-    陈子博 & 男 & t$<$6月 & 25S165056 & \rule{3cm}{0.4pt} \\
-    郝建晓 & 男 & t$<$6月 & 25S153158 & \rule{3cm}{0.4pt} \\
-    庄冠宁 & 男 & t$<$6月 & 25S065015 & \rule{3cm}{0.4pt} \\
-    蔡卓畅 & 男 & t$<$6月 & 25S165041 & \rule{3cm}{0.4pt} \\
-    郭芯言 & 女 & t$<$6月 & 220210228 & \rule{3cm}{0.4pt} \\
-    郭昱辰 & 女 & t$<$6月 & 2023311H03 & \rule{3cm}{0.4pt} \\
-    郑雨竺 & 女 & t$<$6月 & 25S156021 & \rule{3cm}{0.4pt} \\
+    \midrule
+    吴承沣 & 男 & 2年以上 & - & \rule{3cm}{0.4pt} \\
+    康钊源 & 男 & 1-2年 & 2024311150 & \rule{3cm}{0.4pt} \\
+    黄家骏 & 男 & 1-2年 & 2024311040 & \rule{3cm}{0.4pt} \\
+    寇家辉 & 男 & 6月-1年 & 2024311312 & \rule{3cm}{0.4pt} \\
+    王俊杰 & 男 & 6月以内 & 2024312042 & \rule{3cm}{0.4pt} \\
+    吴智杰 & 男 & 6月以内 & 2510082093 & \rule{3cm}{0.4pt} \\
+    罗梦恬 & 女 & 2年以上 & 2023311801 & \rule{3cm}{0.4pt} \\
+    潘秀丽 & 女 & 6月以内 & 2024312180 & \rule{3cm}{0.4pt} \\
+    樊黎硕 & 女 & 6月以内 & 25S153056 & \rule{3cm}{0.4pt} \\
+    肖叶萱 & 女 & 6月以内 & 2023215045 & \rule{3cm}{0.4pt} \\
     \bottomrule % 表格底部粗线
 \end{tabular}
 \end{center}
@@ -76,12 +76,12 @@
 
 % 手动排版标题，并控制其上方和下方的间距
 \begin{center}
-    \vspace*{-1.5cm} % 调整标题上方间距
+    \vspace*{0cm} % 调整标题上方间距
     {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
     \vspace{0.5cm} % 调整标题下方与正文的间距
 \end{center}
 
-本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2026哈尔滨工业大学（深圳）体育文化节极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
 
 \setlist[enumerate]{itemsep=5pt} % 再次设置，确保对后续列表生效
 \begin{enumerate} % 项目列表
@@ -97,29 +97,26 @@
 \item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
 \end{enumerate}
 
-\vspace{0.5cm} % 增加垂直间距
+\vspace{0.2cm} % 增加垂直间距
 
 \noindent \textbf{B队运动员名单及签名：} \\
 \begin{center}
 \small % 减小表格字体以适应页面
-\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\renewcommand{\arraystretch}{1.5} % 增加行间距，可调整数值
 \begin{tabular}{lccccl}
     \toprule
     \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
     \midrule
-    王昭蔚 & 男 & 2年$<$t & 25s155019 & \rule{3cm}{0.4pt} \\
-    贾思洋 & 男 & 6月$<$t$<$1年 & 23SM46556 & \rule{3cm}{0.4pt} \\
-    丁俊洋 & 男 & t$<$6月 & 220310206 & \rule{3cm}{0.4pt} \\
-    黄俊杰 & 男 & t$<$6月 & 2023313619 & \rule{3cm}{0.4pt} \\
-    李慧城 & 男 & t$<$6月 & 2024312115 & \rule{3cm}{0.4pt} \\
-    徐传奇 & 男 & t$<$6月 & 2024312906 & \rule{3cm}{0.4pt} \\
-    吴锦霈 & 男 & t$<$6月 & 2025310749 & \rule{3cm}{0.4pt} \\
-    黄乐佳 & 男 & t$<$6月 & 2025310486 & \rule{3cm}{0.4pt} \\
-    朱海峰 & 男 & t$<$6月 & 25S051029 & \rule{3cm}{0.4pt} \\
-    黄睿涵 & 女 & t$<$6月 & 2024312712 & \rule{3cm}{0.4pt} \\
-    考沛瑶 & 女 & t$<$6月 & 24S039019 & \rule{3cm}{0.4pt} \\
-    刘芷烨 & 女 & t$<$6月 & 25S152047 & \rule{3cm}{0.4pt} \\
-    陈子瑶 & 女 & t$<$6月 & 2025310432 & \rule{3cm}{0.4pt} \\
+    刘慕实 & 男 & 2年以上 & 25S151141 & \rule{3cm}{0.4pt} \\
+    张骋旭 & 男 & 2年以上 & - & \rule{3cm}{0.4pt} \\
+    赵浩帆 & 男 & 6月-1年 & 25B965005 & \rule{3cm}{0.4pt} \\
+    梁柱政 & 男 & 6月-1年 & 25S154067 & \rule{3cm}{0.4pt} \\
+    杨鸿鑫 & 男 & 6月以内 & 2024312706 & \rule{3cm}{0.4pt} \\
+    金圣博 & 男 & 6月以内 & 210810404 & \rule{3cm}{0.4pt} \\
+    Ocean & 女 & 1-2年 & 2025213750 & \rule{3cm}{0.4pt} \\
+    陈子瑶 & 女 & 6月以内 & 2025310432 & \rule{3cm}{0.4pt} \\
+    杨千凝 & 女 & 6月以内 & 25S164067 & \rule{3cm}{0.4pt} \\
+    傅春颖 & 女 & - & - & \rule{3cm}{0.4pt} \\
     \bottomrule
 \end{tabular}
 \end{center}
@@ -130,12 +127,12 @@
 
 % 手动排版标题，并控制其上方和下方的间距
 \begin{center}
-    \vspace*{-1.5cm} % 调整标题上方间距
+    \vspace*{0cm} % 调整标题上方间距
     {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
     \vspace{0.5cm} % 调整标题下方与正文的间距
 \end{center}
 
-本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2026哈尔滨工业大学（深圳）体育文化节极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
 
 \setlist[enumerate]{itemsep=5pt} % 再次设置
 \begin{enumerate} % 项目列表
@@ -151,29 +148,25 @@
 \item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
 \end{enumerate}
 
-\vspace{0.5cm} % 增加垂直间距
+\vspace{0.2cm} % 增加垂直间距
 
 \noindent \textbf{C队运动员名单及签名：} \\
 \begin{center}
 \small % 减小表格字体以适应页面
-\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\renewcommand{\arraystretch}{1.5} % 增加行间距，可调整数值
 \begin{tabular}{lccccl}
     \toprule
     \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
     \midrule
-    马荣 & 男 & 2年$<$t & 2025330524 & \rule{3cm}{0.4pt} \\
-    黄家骏 & 男 & 6月$<$t$<$1年 & 2024311040 & \rule{3cm}{0.4pt} \\
-    倪梓源 & 男 & t$<$6月 & 2023313729 & \rule{3cm}{0.4pt} \\
-    Nadeem Masih & 男 & t$<$6月 & 23BF52005 & \rule{3cm}{0.4pt} \\
-    刘尊 & 男 & t$<$6月 & 24S152072 & \rule{3cm}{0.4pt} \\
-    陈豪 & 男 & t$<$6月 & 2025310364 & \rule{3cm}{0.4pt} \\
-    黄舒涵 & 男 & t$<$6月 & 2025213672 & \rule{3cm}{0.4pt} \\
-    张陈宇 & 男 & t$<$6月 & 2024311097 & \rule{3cm}{0.4pt} \\
-    Zakaria Moustahib & 男 & t$<$6月 & 2025330183 & \rule{3cm}{0.4pt} \\
-    潘秀丽 & 女 & t$<$6月 & 2024312180 & \rule{3cm}{0.4pt} \\
-    孟欣 & 女 & t$<$6月 & 24B926002 & \rule{3cm}{0.4pt} \\
-    田佳 & 女 & t$<$6月 & 25S057001 & \rule{3cm}{0.4pt} \\
-    黎加馨 & 女 & t$<$6月 & 2025311584 & \rule{3cm}{0.4pt} \\
+    黄家乐 & 男 & 2年以上 & - & \rule{3cm}{0.4pt} \\
+    马荣 & 男 & 6月-1年 & 2025330524 & \rule{3cm}{0.4pt} \\
+    金珉宇 & 男 & 6月以内 & 2024311060 & \rule{3cm}{0.4pt} \\
+    典珅司 & 男 & 6月以内 & 2024311045 & \rule{3cm}{0.4pt} \\
+    Abdul Quader & 男 & 新手 & - & \rule{3cm}{0.4pt} \\
+    张豫艳 & 女 & 2年以上 & - & \rule{3cm}{0.4pt} \\
+    EL MOUDDEN ZAYNAB & 女 & 6月以内 & 2025330187 & \rule{3cm}{0.4pt} \\
+    李焱 & 女 & 6月以内 & 25s155079 & \rule{3cm}{0.4pt} \\
+    小午 & 女 & 6月以内 & 2410012101 & \rule{3cm}{0.4pt} \\
     \bottomrule
 \end{tabular}
 \end{center}
@@ -184,12 +177,12 @@
 
 % 手动排版标题，并控制其上方和下方的间距
 \begin{center}
-    \vspace*{-1.5cm} % 调整标题上方间距
+    \vspace*{0cm} % 调整标题上方间距
     {\fontsize{18pt}{28pt}\selectfont\textbf{自愿参赛责任及风险告知书}} % 设置字体大小和粗体
     \vspace{0.5cm} % 调整标题下方与正文的间距
 \end{center}
 
-本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2025哈尔滨工业大学（深圳）新生杯极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
+本人自愿参加由\textbf{哈尔滨工业大学（深圳）极限飞盘协会组委会}举办的 \textbf{2026哈尔滨工业大学（深圳）体育文化节极限飞盘赛}，现就比赛过程中可能存在的风险声明如下：
 
 \setlist[enumerate]{itemsep=5pt} % 再次设置
 \begin{enumerate} % 项目列表
@@ -205,29 +198,24 @@
 \item 本人（队）已\textbf{认真阅读并全面理解以上内容}，且对上述所有内容予以确认并\textbf{承担相应的法律责任}，本人\textbf{签署此责任书纯属自愿}。
 \end{enumerate}
 
-\vspace{0.5cm} % 增加垂直间距
+\vspace{0.2cm} % 增加垂直间距
 
 \noindent \textbf{D队运动员名单及签名：} \\
 \begin{center}
 \small % 减小表格字体以适应页面
-\renewcommand{\arraystretch}{1.8} % 增加行间距，可调整数值
+\renewcommand{\arraystretch}{1.5} % 增加行间距，可调整数值
 \begin{tabular}{lccccl}
     \toprule
     \textbf{姓名} & \textbf{性别} & \textbf{盘龄} & \textbf{学号} & \textbf{签名} \\[3pt] % 在表头行末尾增加少量垂直间距
     \midrule
-    张豫艳 & 女 & 2年$<$t & 25S153147 & \rule{3cm}{0.4pt} \\
-    马悠然 & 男 & 6月$<$t$<$1年 & 2023311228 & \rule{3cm}{0.4pt} \\
-    刘证涛 & 男 & 6月$<$t$<$1年 & 2024311417 & \rule{3cm}{0.4pt} \\
-    朱昱玮 & 男 & t$<$6月 & 2023311E13 & \rule{3cm}{0.4pt} \\
-    杨鸿鑫 & 男 & t$<$6月 & 2024312706 & \rule{3cm}{0.4pt} \\
-    宁智煌 & 男 & t$<$6月 & 25S165027 & \rule{3cm}{0.4pt} \\
-    张硕 & 男 & t$<$6月 & 25S155080 & \rule{3cm}{0.4pt} \\
-    李旺 & 男 & t$<$6月 & 25s152079 & \rule{3cm}{0.4pt} \\
-    郭辉源 & 男 & t$<$6月 & 25S151181 & \rule{3cm}{0.4pt} \\
-    SARKER BIKAS & 男 & t$<$6月 & 2025330273 & \rule{3cm}{0.4pt} \\
-    杨婧兰 & 女 & t$<$6月 & 2024311450 & \rule{3cm}{0.4pt} \\
-    李焱 & 女 & t$<$6月 & 25S155079 & \rule{3cm}{0.4pt} \\
-    李园 & 女 & t$<$6月 & 25S153034 & \rule{3cm}{0.4pt} \\
+    王硕 & 男 & 2年以上 & - & \rule{3cm}{0.4pt} \\
+    耿增越 & 男 & 1-2年 & 2023311226 & \rule{3cm}{0.4pt} \\
+    温岩 & 男 & 6月以内 & 2024312297 & \rule{3cm}{0.4pt} \\
+    万一鸣 & 男 & 6月以内 & 2025310507 & \rule{3cm}{0.4pt} \\
+    张梦辉 & 男 & 6月以内 & 2025312884 & \rule{3cm}{0.4pt} \\
+    孟欣 & 女 & 6月-1年 & 24B926002 & \rule{3cm}{0.4pt} \\
+    段绚涵 & 女 & 6月以内 & 2025310723 & \rule{3cm}{0.4pt} \\
+    summer & 女 & 6月以内 & 2410053014 & \rule{3cm}{0.4pt} \\
     \bottomrule
 \end{tabular}
 \end{center}
